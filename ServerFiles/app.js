@@ -9,10 +9,10 @@ app.listen(3000, () => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile('./html/index.html', { root: __dirname });
+    res.sendFile('./HTML/index.html', { root: __dirname });
 });
 
 // 404 page
 app.use((req, res) => {
-    res.status(404).sendFile('./html/404.html', { root: __dirname });
+    res.status(404).sendFile('./HTML/404.html', { root: __dirname });
 });
